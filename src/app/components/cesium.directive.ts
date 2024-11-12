@@ -278,7 +278,7 @@ export class CesiumDirective implements OnInit, OnDestroy {
 
   mouseMoveHandler(mouse: HoverMovement) {
     const pick = this.viewer.scene.pick(mouse.endPosition);
-    console.log('pick motherfucker', pick);
+    console.log('pick', pick);
     // if (!this.worker) {
     //   return;
     // }
