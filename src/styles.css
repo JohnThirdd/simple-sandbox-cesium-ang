@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0px;
+    height: 100vh;
+    
+    font-family: monospace;
+    font-size: 20px;
+}
+
+button {
+    background-color: #5599FF;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border: 0;
+    color: white;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: #79AFFF;
+}
+
+button:disabled {
+    background-color: #EEEEEE;
+    cursor: auto;
+}

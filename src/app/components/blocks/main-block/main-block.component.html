@@ -1,0 +1,11 @@
+<div 
+    appCesium class="cesiumProvider"
+    [cameraFlyTo$]="cameraFlyTo$"
+    (openProperty$)="openProperty$.emit($event)"
+>
+</div>
+<app-hero-detail 
+    class="buttonBack" 
+    (click)="toolPanelVisibleChange.emit()" 
+    [toolPanelHidden]="toolPanelHidden"
+></app-hero-detail>

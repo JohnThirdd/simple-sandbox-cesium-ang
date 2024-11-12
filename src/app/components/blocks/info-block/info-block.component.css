@@ -1,0 +1,23 @@
+.main {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 30rem;
+    max-height: 47rem;
+    overflow: hidden auto;
+    gap: 1rem;
+    transition: all .3s
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    color: #b1b1b1;
+}
+
+.head {
+    margin-right: 0.5rem;
+    color: black;
+}

@@ -1,0 +1,21 @@
+<div class="main">
+    <!-- <app-tool-panel [hidden]="toolPanelHidden" class="app-tool-panel"></app-tool-panel> -->
+    <app-tool-panel 
+        (CameraFlyToEmitter)="test($event)" 
+        [style.width]="toolPanelHidden ? '0px' : 'max-content'" 
+        [style.padding]="toolPanelHidden ? '0px' : '2rem'" 
+        class="app-tool-panel"
+    ></app-tool-panel>
+    <app-main-block 
+        (toolPanelVisibleChange)="toolPanelVisibleChange()"
+        (openProperty$)="componentsInfo=$event"
+        [toolPanelHidden]="toolPanelHidden" 
+        [cameraFlyTo$]="cameraFlyTo$"
+        class="app-main-block"
+    ></app-main-block>
+    <app-info-block
+        class="app-info-block"
+        [components]="componentsInfo"
+    >
+    </app-info-block>
+</div>

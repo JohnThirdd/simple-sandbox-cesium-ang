@@ -1,0 +1,8 @@
+<div class="main">
+    Перемещение камеры
+    <div class="group">
+        <button *ngFor="let item of buttonsFlyTo | keyvalue" (click)="cameraGoTo(item.value)">
+            {{item.key}}
+        </button>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+.main {
+    height: 100%;
+    width: max-content;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}

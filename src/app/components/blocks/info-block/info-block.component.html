@@ -1,0 +1,8 @@
+<div class="main"
+    [style.padding]="components.length === 0 ? '0px': '1rem'"
+    [style.height]="components.length === 0 ? '0px' : 'max-content'" 
+>
+    <div class="row" *ngFor="let el of components">
+        <div class="head">{{el.name}}:</div> {{el.value}}
+    </div>
+</div>
